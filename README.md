@@ -11,7 +11,6 @@ Looking for SQL Server 2017 on Linux VM? Check https://github.com/mloskot/vagran
 * [SQL Server 2017](http://www.microsoft.com/en-us/sql-server/sql-server-2017)
 * Pre-configured with
   * Vagrant default user: `vagrant` with password `vagrant`
-  
   * Port forwarding from host `3433` to guest `1433` (default).
   * Default instance name `MSSQLSERVER`.
   * Database user `sa` with password `Password123`.
