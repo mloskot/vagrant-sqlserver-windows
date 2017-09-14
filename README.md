@@ -16,10 +16,10 @@ Looking for SQL Server 2017 on Linux VM? Check https://github.com/mloskot/vagran
   * Database user `sa` with password `Password123`.
   * Database `master`.
   * Guest local account `vagrant` is member of sysadmin role; authenticated from inside the VM, without password.
-  
+
 ## Requirements
 
-* `vagrant plugin install vagrant-reload`
+* `vagrant plugin install vagrant-reload` (used to reboot after Hyper-V Server updates)
 * Downloaded `SQLServer2017RC2-x64-ENU.iso` (1.5GB, see below)
 
 ## Installation
@@ -30,7 +30,11 @@ Looking for SQL Server 2017 on Linux VM? Check https://github.com/mloskot/vagran
 2. Run the installer and choose to download SQL Server 2017 full ISO.
 3. Copy the ISO next to this Vagrantfile.
 
-### Run
+### Provision
+
+NOTE: Provision runs several steps: installs [KB2919355](https://chocolatey.org/packages/kb2919355)
+update required by SQL Server, **reboots**, installs SQL Server.
+That is why the `vagrant-reload` is required.
 
 1. `git clone` this repository or [download ZIP](https://github.com/mloskot/vagrant-sqlserver/archive/master.zip).
 2. `cd vagrant-sqlserver-windows`
