@@ -19,7 +19,9 @@ Looking for SQL Server 2017 on Linux VM? Check https://github.com/mloskot/vagran
 
 ## Requirements
 
-* `vagrant plugin install vagrant-reload` (used to reboot after Hyper-V Server updates)
+* [VirtualBox](https://www.virtualbox.org/) installed.
+* [Vagrant](https://www.vagrantup.com/downloads.html) installed.
+* Run `vagrant plugin install vagrant-reload` in command prompt (used to reboot after Hyper-V Server updates)
 * Downloaded `SQLServer2017RC2-x64-ENU.iso` (1.5GB, see below)
 
 ## Installation
